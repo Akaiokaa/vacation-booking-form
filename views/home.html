@@ -8,6 +8,32 @@
     <link rel="stylesheet" href="/styles/styles.css">
 </head>
 <body>
-    <h1>Hello World!</h1>
+    <header>
+            <img src="images/dream-vacation.jpeg" alt="Picture of a brightly liy beach">
+    </header>
+    <form action="">
+        <label for="destination">Destination</label>
+        <br>
+            <select id="destination" name="destination">
+            <option value="bali">Bali, Indonesia</option>
+            <option value="paris">Paris, France</option>
+            <option value="tokyo">Tokyo, Japan</option>
+            <option value="maldives">Maldives, Maldives</option>
+            <option value="newyork">New York, USA</option>
+        </select>
+
+        <br>
+        <div>
+            <label for="departureDate">Departure Date</label>
+            <br>
+            <input type="date" id="departureDate" name="departureDate">
+
+            <label for="travelers">Number of Travelers</label>
+            <br>
+            <input type="input" id="travelers" name="travelers">
+        </div>
+        <button>Find my Vacation</button>
+    </form>
+    
 </body>
 </html>
