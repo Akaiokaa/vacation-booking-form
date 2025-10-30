@@ -9,42 +9,45 @@
     <link rel="icon" href="images/vacation-icon.png">
 </head>
 <body>
-    <header>
-        <img src="images/dream-vacation.jpeg" alt="Picture of a brightly lit beach">
-    </header>
-    <form id="booking-form" action="submit-form" method="POST">
-        <label for="destination">Destination</label>
-        <br>
-            <select id="destination" name="destination">
-            <option value="select">Choose a destination...</option>
-            <option value="bali">Bali, Indonesia</option>
-            <option value="paris">Paris, France</option>
-            <option value="tokyo">Tokyo, Japan</option>
-            <option value="maldives">Maldives, Maldives</option>
-            <option value="newyork">New York, USA</option>
-        </select>
-        <br>
-        <span id="err-destination" class="error">A destination must be selected</span>
-        <br>
-        <div class="two-section">
-            <div>
-                <label for="departureDate">Departure Date</label>
-                <br>
-                <input type="date" id="departureDate" name="departureDate">
-                <br>
+    <div class="container">
+        <header>
+            <h1>Book Your Dream Vacation</h1>
+        </header>
+        <form id="booking-form" action="submit-form" method="POST">
+            <label for="destination">Destination</label>
+            <br>
+                <select id="destination" name="destination">
+                <option value="select">Choose a destination...</option>
+                <option value="bali">Bali, Indonesia</option>
+                <option value="paris">Paris, France</option>
+                <option value="tokyo">Tokyo, Japan</option>
+                <option value="maldives">Maldives, Maldives</option>
+                <option value="newyork">New York, USA</option>
+            </select>
+            <br>
+            <span id="err-destination" class="error">A destination must be selected</span>
+            <br>
+            <div class="two-section">
+                <div>
+                    <label for="departureDate">Departure Date</label>
+                    <br>
+                    <input type="date" id="departureDate" name="departureDate">
+                    <br>
+                </div>
+                <div>
+                    <label for="travelers">Number of Travelers</label>
+                    <br>
+                    <input type="number" id="travelers" name="travelers">
+                    <br>
+                    <span id="err-travelers" class="error">Number of travelers must be greater than 0.</span>
+                </div>
+                
             </div>
-            <div>
-                <label for="travelers">Number of Travelers</label>
-                <br>
-                <input type="number" id="travelers" name="travelers">
-                <br>
-                <span id="err-travelers" class="error">Number of travelers must be greater than 0.</span>
-            </div>
-            
-        </div>
-        <button>Find my Vacation</button>
-    </form>
-    <footer>GitHub Repository<a href="">[github-link]</a></footer>
+            <button>Find my Vacation</button>
+        </form>
+    </div>
+    <footer>test</footer>
+    <!-- <footer>GitHub Repository<a href="">[github-link]</a></footer> -->
     <script src="js/vacation.js"></script>
 </body>
 </html>
