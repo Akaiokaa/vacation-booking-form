@@ -13,11 +13,41 @@ img{
     width: 100%;
 }
 
-header, form{
+header, form {
     margin: 0 auto;
     width: 40%;
     background-color: white;
 }
 header{
     margin-top: 50px;
+}
+footer{
+    background-color: white;
+    text-align: center;
+}
+.error{
+    display: none;
+    color: red;
+}
+.two-section{
+    display: flex;
+    justify-content: space-between;
+}
+button{ 
+    display: flex;
+    justify-content: center;
+    margin: 0 auto;
+}
+@media (max-width: 700px) {
+    
+
+    header, form {
+        margin: 0 auto;
+        width: 80%;
+        background-color: white;
+    }
+    
+    header {
+        margin-top: 50px;
+    }
 }
