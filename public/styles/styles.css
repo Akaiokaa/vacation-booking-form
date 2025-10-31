@@ -4,8 +4,10 @@
     box-sizing: border-box;
     margin: 0;
     padding: 0;
+    font-family: Calibri,'Gill Sans', 'Gill Sans MT', 'Trebuchet MS', sans-serif ;
 }
 body,html{
+    background-color: blue;
     height: 100%;
     width: 100%;
 }
@@ -19,17 +21,57 @@ footer{
     text-align: center;
     width: 100%;
 }
-.container{
-    width: 500px;
-    height: 500px;
-    background-color: blueviolet;
-}
 header{
+    height: 125px;
     background-image: url('../images/dream-vacation.jpeg');
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.container{
+    border-radius: 5px;
+    margin-top: 3rem;
+    width: 500px;
+    height: auto;
+    background-color: white;
+}
+form{
+    height: auto;
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+}
+form > *{
+   padding-top: 10px;
+}
+select{
+    border: none;
+    background-color: white;
+    padding-left: 10px;
+}
+.two-section{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 25px;
+}
+button{
+    color: white;
+    margin: 0 35%;
+    padding: 8px 0px;
+    border: none;
+    text-decoration: none;
+    background-color: blue;
+    border-radius: 15px;
 }
 h1{
+    padding: auto 0;
     color: white;
 }
 footer{
     background-color: blue;
+}
+.error{
+    color: red;
+    display: none;
 }
