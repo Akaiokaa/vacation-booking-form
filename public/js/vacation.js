@@ -14,6 +14,10 @@ document.getElementById('booking-form').onsubmit = () => {
     if(travelers < 1){
         document.getElementById("err-travelers").style.display = 'block';
         isValid = false;
+    } 
+    if(isNaN(travelers)){
+        document.getElementById("err-travelers-letters").style.display = 'block';
+        isValid = false;
     }
     return isValid
 }
