@@ -27,14 +27,24 @@ header{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-position: center -100px;
+    background-position: left -125px;
+    background-image: 
+        linear-gradient(rgba(0,0,0,0.5), rgba(0,0,0,0.5)),
+        url('../images/dream-vacation.jpeg');
 }
 .container{
+    overflow: hidden;
     border-radius: 5px;
     margin-top: 3rem;
     width: 500px;
     height: auto;
     background-color: white;
 }
+form {
+    font-size: small;
+}
+
 form{
     height: auto;
     width: auto;
@@ -55,6 +65,14 @@ select{
     justify-content: space-between;
     margin-bottom: 25px;
 }
+input[type="number"],
+input[type="date"] {
+    border: none;
+    box-sizing: border-box;
+    outline: none;           /* removes default focus outline */
+}
+
+
 button{
     color: white;
     margin: 0 35%;
@@ -63,6 +81,8 @@ button{
     text-decoration: none;
     background-color: blue;
     border-radius: 15px;
+    margin-bottom: 15px;
+    background: linear-gradient(270deg,  rgb(19, 35, 179),blue);
 }
 h1{
     padding: auto 0;
