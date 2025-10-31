@@ -65,11 +65,15 @@ select{
     justify-content: space-between;
     margin-bottom: 25px;
 }
-input[type="number"],
+.two-section div input{
+    padding-left: 10px;
+    padding-top: 10px;
+}
+input[type="text"],
 input[type="date"] {
     border: none;
     box-sizing: border-box;
-    outline: none;           /* removes default focus outline */
+    outline: none;
 }
 
 
