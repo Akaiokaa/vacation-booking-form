@@ -17,6 +17,7 @@ body {
     align-items: center;
     justify-content: space-between;
 }
+
 /* header and container styling */
 header {
     height: 125px;
@@ -36,12 +37,13 @@ h1{
 }
 .container {
     overflow: hidden;
-    border-radius: 5px;
+    border-radius: 8px;
     margin-top: 3rem;
-    width: 500px;
+    width: 450px;
     height: auto;
     background-color: white;
 }
+
 /* form styling */
 form {
     font-size: small;
@@ -52,7 +54,9 @@ form {
     width: auto;
     display: flex;
     flex-direction: column;
-    padding: 10px;
+    padding-top: 10px;
+    padding-right: 2.2rem;
+    padding-left: 2.2rem;
 }
 
 form > *{
@@ -70,6 +74,7 @@ footer {
     color: white;
     background: linear-gradient(270deg,  rgb(17, 31, 160),blue,rgb(17, 30, 153));
 }
+
 /* two-section styling */
 .two-section{
     display: flex;
